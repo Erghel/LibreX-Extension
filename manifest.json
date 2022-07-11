@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "LibreX - privacy respecting search.",
+    "version": "1.0",
+    "author": "LibreX",
+    "default_locale": "en",
+    "description": "__MSG_extensionDescription__",
+    "icons": {
+      "48": "librex.png"
+    },
+    "browser_action": {
+      "default_title": "LibreX"
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "strict_min_version": "64.0"
+      }
+    },
+    "chrome_settings_overrides": {
+      "search_provider": {
+        "name": "LibreX",
+        "keyword": "@lx, @libx, @librex",
+        "search_url": "https://librex.beparanoid.de/search.php?q={searchTerms}",
+        "favicon_url": "https://librex.beparanoid.de/favicon.ico",
+        "is_default": true
+      }
+    }
+  }
+  
